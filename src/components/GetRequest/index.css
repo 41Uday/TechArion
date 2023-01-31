@@ -1,0 +1,30 @@
+.gr-container {
+    background-color: black;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.list-item {
+    background-color: white;
+    height: 200px;
+    width: 350px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.list-head {
+    text-align: center;
+    font-size: 20px;
+}
+
+.last-para-gr {
+    text-align: right;
+}

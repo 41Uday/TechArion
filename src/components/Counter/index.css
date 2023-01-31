@@ -1,0 +1,37 @@
+
+.bg-container {
+    padding: 30px;
+    background-color: skyblue;
+  }
+  
+  .head-count {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+  }
+  
+  .card-1-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-1-count {
+    background-color: transparent;
+    font-size: 30px;
+    margin-right: 80px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .button-2-count {
+    background-color: transparent;
+    font-size: 30px;
+    margin-left: 80px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .counter {
+    font-size: 40px;
+  }

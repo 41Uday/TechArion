@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  text-align: center;
+}
+
+.h {
+  font-size: 25px;
+  cursor: pointer;
+}

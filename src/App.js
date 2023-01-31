@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css'
 
-export default App;
+import Counter from './components/Counter'
+
+import GetRequest from './components/GetRequest'
+
+import PostRequest from './components/PostRequest'
+
+class App extends Component  {
+
+  state = {value : ""}
+
+   CounterApp = () => {
+      this.setState({value : "counter"})
+  }
+
+  GetApp = () => {
+    this.setState({value : "get"})
+  }
+
+  RequestApp = () => {
+    this.setState({value : "post"})
+  }
+
+  getComponents = () => {
+    const {value} = this.state 
+    switch(value) {
+      case "counter" :
+        return <Counter />
+      case "get" :
+        return <GetRequest />
+      case "post" :
+        return <PostRequest />
+      default :
+        return ""
+    }
+  }
+
+  render() {
+    return (
+      <div className='app-container'>
+        <h1 className='h' onClick={this.CounterApp}>Counter Application</h1>
+        <h1 className='h' onClick={this.GetApp}>List of Items dispaly using Get Reuquest</h1>
+        <h1 className='h' onClick={this.RequestApp}>POST Request Api</h1>
+        <p>Note: Please click above which you want</p>
+        {this.getComponents()}
+      </div>
+    )
+  }
+  
+  }
+
+export default App

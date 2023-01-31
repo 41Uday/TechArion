@@ -1,0 +1,40 @@
+.pr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.pr-card-1 {
+    display: flex;
+    align-items: center;
+}
+
+.para-1-pr {
+    margin-right: 10px;
+}
+
+.email-input {
+    width: 200px;
+    outline: none;
+}
+
+.para-2-pr {
+    margin-left: 100px;
+    margin-right: 15px;
+}
+
+.text {
+    outline: none;
+}
+
+.pr-button {
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    margin-top: 25px;
+}
